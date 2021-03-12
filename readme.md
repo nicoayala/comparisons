@@ -13,3 +13,11 @@ To start the benchmarks, run:
 ```
 $ docker run --rm -v `pwd`:/app -w /app -it -e RUBYOPT=-W:no-deprecated ruby:2.7-alpine sh -c 'apk add git build-base && bundle && benchmark-driver ./all.yml --bundler'
 ```
+
+## without docker
+
+1. Clone
+2. Run: `$ bundle install`
+3. Then: `$ benchmark-driver ./all.yml --bundler`
+
+To run ams to_json comparison: `$ benchmark-driver ./to_json.yml --bundler`
