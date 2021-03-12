@@ -11,3 +11,7 @@ gem 'ffaker'
 
 # Sugar
 gem 'attr_extras'
+
+gem 'oj', '~> 3.11'
+
+gem 'yajl-ruby', '~> 1.4'
